@@ -36,6 +36,33 @@ h2 {
   cursor: pointer;
 }
 
-#navbuttons h3:hover {
+/* #navbuttons h3:hover {
   color: #6c757d;
+} */
+
+.portfolioImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 10px;
+  z-index: -1;
+}
+
+.navButton {
+  position: relative;
+  margin-top: 20px;
+}
+
+.navButton:hover .portfolioImage {
+  display: block;
+}
+
+.navButton:hover h3 {
+  color: white;
+  font-size: 30px;
 }
