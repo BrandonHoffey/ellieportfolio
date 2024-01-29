@@ -1,0 +1,41 @@
+body {
+  background-color: #e3d5ca;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: black;
+  font-family: "Oooh Baby";
+  font-size: 86px;
+}
+
+#header {
+  padding-top: 10px;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Josefin Slab", serif;
+}
+
+#navbuttons {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 300px;
+  font-size: 18px;
+}
+
+#navbuttons h3 {
+  cursor: pointer;
+}
+
+#navbuttons h3:hover {
+  color: #6c757d;
+}
