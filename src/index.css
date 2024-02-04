@@ -1,5 +1,7 @@
 body {
   background-color: #e3d5ca;
+  margin: 0;
+  height: 100%;
 }
 
 h1 {
@@ -25,20 +27,18 @@ h2 {
 
 #navbuttons {
   padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 150px;
   font-size: 18px;
+  margin-bottom: 50px;
 }
 
 #navbuttons h3 {
   cursor: pointer;
 }
-
-/* #navbuttons h3:hover {
-  color: #6c757d;
-} */
 
 .portfolioImage {
   position: absolute;
@@ -58,11 +58,28 @@ h2 {
   margin-top: 20px;
 }
 
-.navButton:hover .portfolioImage {
+.navButton h3:hover + .portfolioImage {
   display: block;
 }
 
-.navButton:hover h3 {
+#aboutButton:hover,
+#portfolioButton:hover {
   color: white;
   font-size: 30px;
+}
+
+#contactButton:hover {
+  color: rgb(19, 19, 19);
+  font-size: 30px;
+}
+
+#contactButton:hover {
+  visibility: visible;
+  height: auto;
+}
+
+.ContactDiv {
+  position: relative;
+  margin-top: 20px;
+  min-height: 240px;
 }

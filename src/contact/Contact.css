@@ -39,3 +39,20 @@ h2 {
 #navbuttons h3:hover {
   color: #6c757d;
 }
+
+#footer {
+  background-color: #faedcd;
+  color: rgb(232, 225, 225);
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 30px;
+  text-align: center;
+  z-index: -1;
+}
+
+#footer a {
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+}
