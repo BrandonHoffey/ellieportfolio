@@ -23,19 +23,25 @@ h2 {
   font-family: "Josefin Slab", serif;
 }
 
-#navbuttons {
-  padding-top: 90px;
+#mainContainer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 300px;
-  font-size: 18px;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 100px;
 }
 
-#navbuttons h3 {
-  cursor: pointer;
+.aboutImage {
+  max-height: 350px;
+  min-height: 50px;
+  max-width: 350px;
 }
 
-#navbuttons h3:hover {
-  color: #6c757d;
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #faedcd;
 }
