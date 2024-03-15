@@ -13,7 +13,21 @@ h1 {
   /* border: 1px solid black; */
 }
 
+#swirl1 {
+  width: 200px;
+  transform: scaleX(-1);
+  padding-top: 10px;
+}
+
+#swirl2 {
+  width: 200px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
 #header {
+  display: flex;
+  justify-content: center;
   padding-top: 10px;
   cursor: pointer;
 }
