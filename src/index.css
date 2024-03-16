@@ -1,5 +1,5 @@
 body {
-  background-color: #f4d5bd;
+  background-color: #e3d5ca;
   margin: 0;
   height: 100%;
 }
@@ -22,6 +22,21 @@ h2 {
 }
 
 #header {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+  cursor: pointer;
+}
+
+#swirl1 {
+  width: 200px;
+  transform: scaleX(-1);
+  padding-top: 10px;
+}
+
+#swirl2 {
+  width: 200px;
+  padding-left: 20px;
   padding-top: 10px;
 }
 
@@ -63,7 +78,7 @@ h2 {
 }
 
 #aboutButton:hover,
-#portfolioButton:hover {
+#photographyButton:hover {
   color: white;
   font-size: 30px;
 }

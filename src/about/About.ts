@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (headerButton) {
     headerButton.addEventListener("click", function () {
       window.location.href =
-        "http://127.0.0.1:5500/ellieportfolio/src/index.html";
+        "http://127.0.0.1:5500/src/index.html";
     });
   }
 });

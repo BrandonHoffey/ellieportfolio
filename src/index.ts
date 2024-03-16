@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const portfolioButton = document.getElementById("portfolioButton");
+  const photographyButton = document.getElementById("photographyButton");
 
-  if (portfolioButton) {
-    portfolioButton.addEventListener("click", function () {
+  if (photographyButton) {
+    photographyButton.addEventListener("click", function () {
       window.location.href =
-        "http://127.0.0.1:5500/ellieportfolio/src/portfolio/portfolio.html";
+        "http://127.0.0.1:5500/src/photography/Photography.html";
     });
   }
 });
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (aboutButton) {
     aboutButton.addEventListener("click", function () {
       window.location.href =
-        "http://127.0.0.1:5500/ellieportfolio/src/about/About.html";
+        "http://127.0.0.1:5500/src/about/About.html";
     });
   }
 });
