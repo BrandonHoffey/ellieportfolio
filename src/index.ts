@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const contactButton = document.getElementById("contactButton");
+  const cinematographyButton = document.getElementById("cinematographyButton");
 
-  if (contactButton) {
-    contactButton.addEventListener("click", function () {
+  if (cinematographyButton) {
+    cinematographyButton.addEventListener("click", function () {
       window.location.href =
-        "http://127.0.0.1:5500/ellieportfolio/src/contact/Contact.html";
+        "http://127.0.0.1:5500/src/cinematography/Cinematography.html";
     });
   }
 });
