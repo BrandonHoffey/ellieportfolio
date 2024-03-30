@@ -7,23 +7,47 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    color: black;
+    color: rgb(58, 17, 2);
     font-family: "Oooh Baby";
     font-size: 86px;
+  }
+
+  h2 {
+    color: rgb(58, 17, 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Josefin Slab", serif;
+  }
+
+  #photoCategoryContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     /* border: 1px solid black; */
   }
   
-  #swirl1 {
-    width: 200px;
-    transform: scaleX(-1);
-    padding-top: 10px;
+  .photoDropdown {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
   }
   
-  #swirl2 {
-    width: 200px;
-    padding-left: 20px;
-    padding-top: 10px;
+  #image14 {
+    height: 350px;
+    width: 197px;
   }
+
+.photo {
+  height: 350px;
+  width: 232px;
+}
+
+
+.photographyPhotos {
+  height: 350px;
+  /* border: 1px solid black; */
+}
   
   #header {
     display: flex;

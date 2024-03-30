@@ -9,13 +9,14 @@ h1 {
   align-items: center;
   justify-content: center;
   margin: 0;
-  color: black;
+  color: rgb(58, 17, 2);
   font-family: "Oooh Baby";
   font-size: 86px;
 }
 
 h2 {
   display: flex;
+  color: rgb(58, 17, 2);
   align-items: center;
   justify-content: center;
   font-family: "Josefin Slab", serif;
@@ -28,17 +29,19 @@ h2 {
   cursor: pointer;
 }
 
-#swirl1 {
+/* #swirl1 {
   width: 200px;
   transform: scaleX(-1);
   padding-top: 10px;
+  color: rgb(58, 17, 2);
 }
 
 #swirl2 {
   width: 200px;
   padding-left: 20px;
   padding-top: 10px;
-}
+  color: rgb(58, 17, 2);
+} */
 
 #navbuttons {
   padding-top: 50px;
@@ -49,6 +52,8 @@ h2 {
   gap: 150px;
   font-size: 18px;
   margin-bottom: 50px;
+  color: rgb(58, 17, 2);
+
 }
 
 #navbuttons h3 {

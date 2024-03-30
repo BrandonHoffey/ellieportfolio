@@ -7,7 +7,7 @@ h1 {
   align-items: center;
   justify-content: center;
   margin: 0;
-  color: black;
+  color: rgb(58, 17, 2);
   font-family: "Oooh Baby";
   font-size: 86px;
   /* border: 1px solid black; */
@@ -33,6 +33,7 @@ h1 {
 }
 
 h2 {
+  color: rgb(58, 17, 2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,6 +98,7 @@ h2 {
 }
 
 #container3 p {
+  color: rgb(58, 17, 2);
   font-family: "Josefin Slab", serif;
   font-size: 25px;
 }
