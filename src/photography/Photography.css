@@ -24,7 +24,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    overflow: autto;
+    white-space: nowrap;
     /* border: 1px solid black; */
+  }
+
+  .scrollable-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
   }
   
   .photoDropdown {
@@ -32,10 +40,40 @@ body {
     justify-content: center;
     /* border: 1px solid black; */
   }
+
+  #image7 {
+    height: 350px;
+    width: 528px;
+  }
   
   #image14 {
     height: 350px;
     width: 197px;
+  }
+
+  #image25, #image26 {
+    height: 350px;
+    width: 198px;
+  }
+
+  #image27 {
+    height: 350px;
+    width: 467px;
+  }
+
+  #image30 {
+    height: 350px;
+    width: 525px;
+  }
+
+  #image31, #image34 {
+    height: 350px;
+    width: 251px;
+  }
+
+  #image32 {
+    height: 350px;
+    width: 240px;
   }
 
 .photo {
