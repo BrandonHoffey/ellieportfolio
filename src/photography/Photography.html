@@ -11,7 +11,7 @@
     <script src="../../dist/photography/Photography.js" defer></script>
     <title>Photography</title>
   </head>
-  <body>
+  <body id="body">
     <div id="header">
       <h1>Ellie Hoffey</h1>
     </div>
@@ -24,28 +24,31 @@
         <div id="portraitPhotos" class="photographyPhotos">
           <img
             class="photo"
-            src="../../images/PhotographyImages/image1.jpg"
-            alt="Girl with hat"
-          />
-          <img
-            class="photo"
             src="../../images/PhotographyImages/image2.jpg"
             alt="boy behind sheet"
+          />
+          <img class="picture"
+            id="image7"
+            src="../../images/PhotographyImages/image7.jpg"
+            alt="image7"
           />
           <img
             class="photo"
             src="../../images/PhotographyImages/image4.jpg"
             alt="Girl with long hair"
           />
+          <img class="picture" id="image25" src="../../images/PhotographyImages/image25.jpg" alt="image25">
+          <img class="picture" id="image26" src="../../images/PhotographyImages/image26.jpg" alt="image26">
+          <img class="picture" id="image27" src="../../images/PhotographyImages/image27.jpg" alt="image27">
+          <img
+            class="photo"
+            src="../../images/PhotographyImages/image1.jpg"
+            alt="Girl with hat"
+          />
           <img
             class="photo"
             src="../../images/PhotographyImages/image6.jpg"
             alt="Girl sitting by river"
-          />
-          <img
-            id="image7"
-            src="../../images/PhotographyImages/image7.jpg"
-            alt="image7"
           />
           <img
             class="photo"
@@ -57,45 +60,41 @@
             src="../../images/PhotographyImages/image11.jpg"
             alt="image11"
           />
-          <img id="image25" src="../../images/PhotographyImages/image25.jpg" alt="image25">
-          <img id="image26" src="../../images/PhotographyImages/image26.jpg" alt="image26">
-          <img id="image27" src="../../images/PhotographyImages/image27.jpg" alt="image27">
           <img class="photo" src="../../images/PhotographyImages/image28.JPG" alt="image28">
           <img class="photo" src="../../images/PhotographyImages/image29.jpg" alt="image29">
-          <img id="image30" src="../../images/PhotographyImages/image30.jpg" alt="image30">
-          <img id="image31" src="../../images/PhotographyImages/image31.JPG" alt="image31">
-          <img id="image32" src="../../images/PhotographyImages/image32.JPG" alt="image32">
+          <img class="picture" id="image31" src="../../images/PhotographyImages/image31.JPG" alt="image31">
+          <img class="picture" id="image32" src="../../images/PhotographyImages/image32.JPG" alt="image32">
           <img class="photo" src="../../images/PhotographyImages/image33.JPG" alt="image33">
-          <img id="image34" src="../../images/PhotographyImages/image34.JPG" alt="image34">
+          <img class="picture" id="image34" src="../../images/PhotographyImages/image34.JPG" alt="image34">
           <img class="photo" src="../../images/PhotographyImages/image35.jpg" alt="image35">
           <img class="photo" src="../../images/PhotographyImages/image36.JPG" alt="image36">
         </div>
       </div>
-      <div id="Nature" class="photoDropdown">Nature</div>
+      <div id="Nature" class="photoDropdown">Landscapes - Cityscapes</div>
       <div id="naturePhotos" class="photographyPhotos">
         <img
-          class="photo"
-          src="../../images/PhotographyImages/image3.jpg"
-          alt="Red Car"
+        class="photo"
+        src="../../images/PhotographyImages/image3.jpg"
+        alt="Red Car"
         />
-      </div>
-      <div id="Weddings" class="photoDropdown">Weddings</div>
-      <div id="weddingPhotos" class="photographyPhotos">
-        <img
-          class="photo"
-          src="../../images/PhotographyImages/image18.jpg"
-          alt="Cutting the cake"
-        />
+        <img class="picture" id="image5" src="../../images/PhotographyImages/image5.jpg" alt="image5">
+        <img class="picture" id="image30" src="../../images/PhotographyImages/image30.jpg" alt="image30">
+        <img class="picture" id="image9" src="../../images/PhotographyImages/image9.jpeg" alt="image9">
       </div>
       <div id="Couples" class="photoDropdown">Couples</div>
       <div id="couplesPhotos" class="photographyPhotos">
         <img
-          id="image14"
+        class="photo"
+          src="../../images/PhotographyImages/image18.jpg"
+          alt="Cutting the cake"
+        />
+        <img class="picture"
+        id="image14"
           src="../../images/PhotographyImages/image14.jpg"
           alt="Couple hugging"
         />
       </div>
-      <div id="Music" class="photoDropdown">Music</div>
+      <div id="Music" class="photoDropdown">Live Performances</div>
       <div id="musicPhotos" class="photographyPhotos">
         <img
           class="photo"
@@ -103,6 +102,16 @@
           alt="Dude singing"
         />
       </div>
+    </div>
+    <div id="footer">
+      <a href="mailto:elliehoffey@gmail.com">
+        <h4>- elliehoffey10@gmail.com -</h4>
+      </a>
+    </div>
+    <div id="enlargedImageContainer">
+      <div id="overlay"></div>
+      <img id="enlargedImage" src="" alt="Enlarged Image" />
+      <button id="closeButton">Close</button>
     </div>
   </body>
 </html>

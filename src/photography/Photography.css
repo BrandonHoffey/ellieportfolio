@@ -1,5 +1,6 @@
 body {
     background-color: #e3d5ca;
+    margin: 0;
   }
   
   h1 {
@@ -20,13 +21,57 @@ body {
     font-family: "Josefin Slab", serif;
   }
 
+  #enlargedImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+  }
+  
+  #enlargedImage {
+    max-width: 63%;
+    max-height: 80%;
+    border: 1px solid black;
+  }
+  
+  #closeButton {
+    position: absolute;
+    top: 10px;
+    right: 120px;
+  }
+
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+  }
+
+  .photoDropdown {
+    color: rgb(58, 17, 2);
+    font-family: "Josefin Slab", serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
   #photoCategoryContainer {
     display: flex;
     flex-direction: column;
     gap: 10px;
     overflow: autto;
     white-space: nowrap;
-    /* border: 1px solid black; */
+    padding-bottom: 50px;
+    padding-left: 10px;
   }
 
   .scrollable-wrapper {
@@ -38,10 +83,10 @@ body {
   .photoDropdown {
     display: flex;
     justify-content: center;
-    /* border: 1px solid black; */
+    text-decoration: underline;
   }
 
-  #image7 {
+  #image7, #image5 {
     height: 350px;
     width: 528px;
   }
@@ -61,7 +106,7 @@ body {
     width: 467px;
   }
 
-  #image30 {
+  #image30, #image9 {
     height: 350px;
     width: 525px;
   }
@@ -81,15 +126,32 @@ body {
   width: 232px;
 }
 
-
 .photographyPhotos {
   height: 350px;
-  /* border: 1px solid black; */
 }
-  
+
   #header {
     display: flex;
     justify-content: center;
     padding-top: 10px;
     cursor: pointer;
+  }
+
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(58, 17, 2);
+  }
+  
+  #footer h4 {
+    margin-top: 8px;
+  }
+  
+  #footer a {
+    color: rgb(244, 242, 242);
+    text-decoration: none;
   }
