@@ -14,16 +14,12 @@ h1 {
   /* border: 1px solid black; */
 }
 
-#swirl1 {
-  width: 200px;
-  transform: scaleX(-1);
-  padding-top: 10px;
-}
-
-#swirl2 {
-  width: 200px;
-  padding-left: 20px;
-  padding-top: 10px;
+h2 {
+  color: rgb(58, 17, 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Josefin Slab", serif;
 }
 
 #header {
@@ -33,6 +29,25 @@ h1 {
   cursor: pointer;
 }
 
+#topImagesContainer {
+  display: flex;
+}
+
+#topImagesContainer img {
+  border: 1px solid black;
+  border-radius: 15px;
+  height: 380px; /* Set desired height */
+  flex: 1; /* Distribute available space equally among the images */
+  margin: 0 5px; /* Add margin for spacing between images */
+}
+
+p {
+  border: 1px solid black;
+  font-size: 18px;
+  margin: 38px;
+  display: block;
+}
+
 #footer {
   position: fixed;
   bottom: 0;
@@ -40,7 +55,7 @@ h1 {
   height: 30px;
   text-align: center;
   padding: 5px;
-  background-color: rgb(58, 17, 2);
+  background-color: rgb(239, 236, 234);
 }
 
 #footer h4 {
@@ -48,6 +63,6 @@ h1 {
 }
 
 #footer a {
-  color: rgb(244, 242, 242);
+  color: rgb(58, 17, 2);
   text-decoration: none;
 }

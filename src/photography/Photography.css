@@ -154,7 +154,7 @@ body {
     height: 30px;
     text-align: center;
     padding: 5px;
-    background-color: rgb(58, 17, 2);
+    background-color: rgb(229, 224, 222);
   }
   
   #footer h4 {
@@ -162,6 +162,6 @@ body {
   }
   
   #footer a {
-    color: rgb(244, 242, 242);
+    color: rgb(58, 17, 2);
     text-decoration: none;
   }
