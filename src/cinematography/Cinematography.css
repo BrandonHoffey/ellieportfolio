@@ -36,16 +36,36 @@ h2 {
 #topImagesContainer img {
   border: 1px solid black;
   border-radius: 15px;
-  height: 380px; /* Set desired height */
-  flex: 1; /* Distribute available space equally among the images */
-  margin: 0 5px; /* Add margin for spacing between images */
+  height: 440px;
+  flex: 1;
+  margin: 0 5px;
 }
 
 p {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-size: 18px;
   margin: 38px;
   display: block;
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+}
+
+#mainImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#image21 {
+  width: 1300px;
+  height: 455px;
+}
+
+#image17 {
+  width: 1300px;
+  height: 445px;
 }
 
 #footer {
