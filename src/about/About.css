@@ -14,16 +14,16 @@ h1 {
   /* border: 1px solid black; */
 }
 
-#swirl1 {
-  width: 200px;
-  transform: scaleX(-1);
-  padding-top: 10px;
+#barsContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
-#swirl2 {
-  width: 200px;
-  padding-left: 20px;
-  padding-top: 10px;
+#barsContainer svg {
+  width: 32px;
+  height: 32px;
 }
 
 #header {
@@ -111,7 +111,7 @@ h2 {
   height: 30px;
   text-align: center;
   padding: 5px;
-  background-color: rgb(58, 17, 2);
+  background-color: rgb(229, 224, 222);
 }
 
 #footer h4 {
@@ -119,6 +119,6 @@ h2 {
 }
 
 #footer a {
-  color: rgb(244, 242, 242);
+  color: rgb(58, 17, 2);
   text-decoration: none;
 }

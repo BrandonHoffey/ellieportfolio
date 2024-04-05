@@ -2,6 +2,11 @@ body {
     background-color: #e3d5ca;
     margin: 0;
   }
+
+  #header {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
   
   h1 {
     display: flex;
@@ -19,6 +24,18 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Josefin Slab", serif;
+  }
+
+  #barsContainer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  #barsContainer svg {
+    width: 32px;
+    height: 32px;
   }
 
   #enlargedImageContainer {
@@ -83,7 +100,7 @@ body {
   .photoDropdown {
     display: flex;
     justify-content: center;
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
 
   #image7, #image5 {
