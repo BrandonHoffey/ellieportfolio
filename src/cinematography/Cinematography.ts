@@ -7,3 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+function toggleCinematographyMenu() {
+  const cinematographyMenu = document.getElementById("cinematographyMenu");
+  if (cinematographyMenu) {
+    if (cinematographyMenu.style.display === "block") {
+      cinematographyMenu.style.display = "none";
+    } else {
+      cinematographyMenu.style.display = "block";
+    }
+  }
+}

@@ -38,6 +38,18 @@ body {
     height: 32px;
   }
 
+  #menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+  }
+
   #enlargedImageContainer {
     display: flex;
     align-items: center;

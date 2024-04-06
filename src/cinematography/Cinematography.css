@@ -22,6 +22,30 @@ h2 {
   font-family: "Josefin Slab", serif;
 }
 
+#barsContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#barsContainer svg {
+  width: 32px;
+  height: 32px;
+}
+
+#cinematographyMenu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
 #header {
   display: flex;
   justify-content: center;

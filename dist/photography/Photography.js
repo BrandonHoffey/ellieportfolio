@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "http://127.0.0.1:5500/src/index.html";
         });
     }
-});
-document.addEventListener("DOMContentLoaded", function () {
+    const barsContainer = document.getElementById("barsContainer");
+    barsContainer === null || barsContainer === void 0 ? void 0 : barsContainer.addEventListener("click", toggleMenu);
     const photos = document.querySelectorAll(".photographyPhotos img");
-    photos.forEach(photo => {
+    photos.forEach((photo) => {
         photo.addEventListener("click", function (event) {
             const clickedImageSrc = event.target.src;
             const enlargedImage = document.getElementById("enlargedImage");
@@ -30,4 +30,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+function toggleMenu() {
+    const menu = document.getElementById("menu");
+    if (menu) {
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        }
+        else {
+            menu.style.display = "block";
+        }
+    }
+}
 //# sourceMappingURL=Photography.js.map

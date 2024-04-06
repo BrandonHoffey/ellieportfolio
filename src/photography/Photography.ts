@@ -6,17 +6,22 @@ document.addEventListener("DOMContentLoaded", function () {
       window.location.href = "http://127.0.0.1:5500/src/index.html";
     });
   }
-});
 
-document.addEventListener("DOMContentLoaded", function () {
+  const barsContainer = document.getElementById("barsContainer");
+  barsContainer?.addEventListener("click", toggleMenu);
+
   const photos = document.querySelectorAll(".photographyPhotos img");
 
-  photos.forEach(photo => {
+  photos.forEach((photo) => {
     photo.addEventListener("click", function (event) {
       const clickedImageSrc = (event.target as HTMLImageElement).src;
-      const enlargedImage = document.getElementById("enlargedImage") as HTMLImageElement;
+      const enlargedImage = document.getElementById(
+        "enlargedImage"
+      ) as HTMLImageElement;
       enlargedImage.src = clickedImageSrc;
-      const enlargedImageContainer = document.getElementById("enlargedImageContainer");
+      const enlargedImageContainer = document.getElementById(
+        "enlargedImageContainer"
+      );
       if (enlargedImageContainer) {
         enlargedImageContainer.style.display = "block";
         document.body.style.overflow = "hidden";
@@ -25,7 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const closeButton = document.getElementById("closeButton");
-  const enlargedImageContainer = document.getElementById("enlargedImageContainer");
+  const enlargedImageContainer = document.getElementById(
+    "enlargedImageContainer"
+  );
 
   closeButton?.addEventListener("click", function () {
     if (enlargedImageContainer) {
@@ -34,3 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  if (menu) {
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+}
