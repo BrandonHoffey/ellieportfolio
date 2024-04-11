@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "http://127.0.0.1:5500/src/index.html";
         });
     }
+    const barsContainer = document.getElementById("barsContainer");
+    if (barsContainer) {
+        barsContainer.addEventListener("click", function () {
+            toggleCinematographyMenu();
+        });
+    }
 });
 function toggleCinematographyMenu() {
     const cinematographyMenu = document.getElementById("cinematographyMenu");

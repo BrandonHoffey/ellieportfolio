@@ -3,25 +3,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (headerButton) {
     headerButton.addEventListener("click", function () {
-      window.location.href =
-        "http://127.0.0.1:5500/src/index.html";
+      window.location.href = "http://127.0.0.1:5500/src/index.html";
+    });
+  }
+
+  const barsContainer = document.getElementById("barsContainer");
+
+  if (barsContainer) {
+    barsContainer.addEventListener("click", function () {
+      toggleAboutMenu();
     });
   }
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const images = document.querySelectorAll(".aboutImage");
-//   images.forEach((image) => {
-//     const imageElement = image as HTMLImageElement;
-//     imageElement.addEventListener("mouseenter", function () {
-//       imageElement.style.transform = "scale(2)";
-//       imageElement.style.transition = "transform 0.3s";
-//       imageElement.style.zIndex = "1";
-//     });
-//     imageElement.addEventListener("mouseleave", function () {
-//       imageElement.style.transform = "scale(1)";
-//       imageElement.style.zIndex = "0";
-//       imageElement.style.transition = "transform 0.3s";
-//     });
-//   });
-// });
+function toggleAboutMenu() {
+  const aboutMenu = document.getElementById("aboutMenu");
+  if (aboutMenu) {
+    if (aboutMenu.style.display === "block") {
+      aboutMenu.style.display = "none";
+    } else {
+      aboutMenu.style.display = "block";
+    }
+  }
+}

@@ -51,6 +51,8 @@ h2 {
   justify-content: center;
   padding-top: 10px;
   cursor: pointer;
+  margin-left: 740px;
+  margin-right: 740px;
 }
 
 #topImagesContainer {
@@ -61,6 +63,7 @@ h2 {
   border: 1px solid black;
   border-radius: 15px;
   height: 440px;
+  width: 300px;
   flex: 1;
   margin: 0 5px;
 }
@@ -82,14 +85,59 @@ p {
   gap: 10px;
 }
 
-#image21 {
+#image22 {
+  height: 442px;
+  width: 619px;
+}
+
+#image21, #image16, #image15 {
   width: 1300px;
   height: 455px;
 }
 
-#image17 {
+#image17, #image19 {
   width: 1300px;
   height: 445px;
+}
+
+#image9 {
+  width: 1300px;
+  height: 453px;
+}
+
+#image20 {
+  width: 1300px;
+  height: 442px;
+}
+
+#image11, #image14 {
+  width: 1300px;
+  height: 543px;
+}
+
+#image10 {
+  width: 1300px;
+  height: 539px;
+}
+
+#image18 {
+  width: 1300px;
+  height: 451px;
+}
+
+#image13, #image12 {
+  width: 1300px;
+  height: 541px;
+}
+
+#image8, #image1, #image5, #image2, #image4, #image3 {
+  width: 1300px;
+  height: 731px;
+}
+
+#image6, #image7 {
+  width: 1300px;
+  height: 735px;
 }
 
 #footer {
