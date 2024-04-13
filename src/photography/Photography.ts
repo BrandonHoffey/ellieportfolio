@@ -22,8 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const enlargedImageContainer = document.getElementById(
         "enlargedImageContainer"
       );
-      if (enlargedImageContainer) {
+      const overlay = document.getElementById("overlay");
+      if (enlargedImageContainer && overlay) {
         enlargedImageContainer.style.display = "block";
+        overlay.style.display = "block";
         document.body.style.overflow = "hidden";
       }
     });
@@ -33,22 +35,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const enlargedImageContainer = document.getElementById(
     "enlargedImageContainer"
   );
+  const overlay = document.getElementById("overlay");
 
   closeButton?.addEventListener("click", function () {
-    if (enlargedImageContainer) {
+    if (enlargedImageContainer && overlay) {
       enlargedImageContainer.style.display = "none";
+      overlay.style.display = "none";
       document.body.style.overflow = "";
     }
   });
-});
 
-function toggleMenu() {
-  const menu = document.getElementById("menu");
-  if (menu) {
-    if (menu.style.display === "block") {
-      menu.style.display = "none";
-    } else {
-      menu.style.display = "block";
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    if (menu) {
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
     }
   }
-}
+});
