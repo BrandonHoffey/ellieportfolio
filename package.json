@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
+  },
+  "homepage": "https//BrandonHoffey.github.io/ellieportfolio",
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
