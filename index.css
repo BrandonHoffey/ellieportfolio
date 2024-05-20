@@ -1,0 +1,92 @@
+body {
+  background-color: #e3d5ca;
+  margin: 0;
+  height: 100%;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: rgb(58, 17, 2);
+  font-family: "Oooh Baby";
+  font-size: 86px;
+}
+
+h2 {
+  display: flex;
+  color: rgb(58, 17, 2);
+  align-items: center;
+  justify-content: center;
+  font-family: "Josefin Slab", serif;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+  cursor: pointer;
+  margin-left: 740px;
+  margin-right: 740px;
+}
+
+#navbuttons {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: rgb(58, 17, 2);
+}
+
+#navbuttons h3 {
+  cursor: pointer;
+}
+
+.portfolioImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 420px;
+  height: 240px;
+  border-radius: 10px;
+  margin-top: 10px;
+  z-index: -1;
+}
+
+.navButton {
+  position: relative;
+  margin-top: 20px;
+}
+
+.navButton h3:hover + .portfolioImage {
+  display: block;
+}
+
+#aboutButton:hover,
+#photographyButton:hover {
+  color: white;
+  font-size: 30px;
+}
+
+#contactButton:hover {
+  color: rgb(8, 8, 8);
+  font-size: 30px;
+}
+
+#contactButton:hover {
+  visibility: visible;
+  height: auto;
+}
+
+.ContactDiv {
+  position: relative;
+  margin-top: 20px;
+  min-height: 240px;
+}

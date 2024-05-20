@@ -1,14 +1,16 @@
 {
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "tsc"
   },
   "homepage": "https//BrandonHoffey.github.io/ellieportfolio",
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/node": "^20.12.2",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
     "cors": "^2.8.5",
