@@ -11,7 +11,11 @@ h1 {
   color: rgb(58, 17, 2);
   font-family: "Oooh Baby";
   font-size: 86px;
-  /* border: 1px solid black; */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover {
+  transform: scale(1.1);
 }
 
 h2 {
@@ -85,7 +89,12 @@ p {
   gap: 10px;
 }
 
-#image22 {
+#image23 {
+  height: 619px;
+  width: 619px;
+}
+
+#image22, #image24 {
   height: 442px;
   width: 619px;
 }
