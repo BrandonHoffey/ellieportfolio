@@ -3,8 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (photographyButton) {
     photographyButton.addEventListener("click", function () {
-      window.location.href =
-        "./src/photography/Photography.html";
+      // Create an anchor element dynamically
+      const photographyLink = document.createElement('a');
+      photographyLink.href = './src/photography/Photography.html';
+      
+      // Append it to the body (it won’t be visible)
+      document.body.appendChild(photographyLink);
+      
+      // Simulate a click on the anchor element to navigate
+      photographyLink.click();
+      
+      // Optionally, remove the anchor element after the click
+      document.body.removeChild(photographyLink);
     });
   }
 });

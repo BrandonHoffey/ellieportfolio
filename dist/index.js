@@ -3,8 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const photographyButton = document.getElementById("photographyButton");
     if (photographyButton) {
         photographyButton.addEventListener("click", function () {
-            window.location.href =
-                "./src/photography/Photography.html";
+            const photographyLink = document.createElement('a');
+            photographyLink.href = './src/photography/Photography.html';
+            document.body.appendChild(photographyLink);
+            photographyLink.click();
+            document.body.removeChild(photographyLink);
         });
     }
 });
