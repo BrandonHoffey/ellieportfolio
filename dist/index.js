@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (photographyButton) {
         photographyButton.addEventListener("click", function () {
             window.location.href =
-                "http://127.0.0.1:5500/src/photography/Photography.html";
+                "./src/photography/Photography.html";
         });
     }
 });

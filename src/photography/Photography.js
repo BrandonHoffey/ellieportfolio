@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var headerButton = document.getElementById("header");
     if (headerButton) {
         headerButton.addEventListener("click", function () {
-            window.location.href = "http://127.0.0.1:5500/src/index.html";
+            window.location.href = "/index.html";
         });
     }
 });
