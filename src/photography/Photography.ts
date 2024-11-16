@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.getElementById("overlay");
 
   closeButton?.addEventListener("click", function () {
+    console.log("Close button clicked");
     if (enlargedImageContainer && overlay) {
       enlargedImageContainer.style.display = "none";
       overlay.style.display = "none";
