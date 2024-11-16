@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (headerButton) {
     headerButton.addEventListener("click", function () {
-      window.location.href = "./index.html";
+      window.location.href = "/index.html";
     });
   }
 
