@@ -118,7 +118,6 @@ h2 {
 .photoDropdown {
   display: flex;
   justify-content: center;
-  /* text-decoration: underline; */
 }
 
 #image7,
@@ -213,20 +212,22 @@ h2 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 56px; /* Reduce font size on smaller screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
   }
 
   #header {
-    margin: 0 10px; /* Remove large margins */
+    margin: 0 10px;
     padding-top: 15px;
   }
 
   h2 {
-    font-size: 18px; /* Smaller subheading */
+    font-size: 18px;
   }
 }
 
-/* Menu */
 #barsContainer {
   position: absolute;
   top: 20px;
@@ -251,7 +252,6 @@ h2 {
   z-index: 1000;
 }
 
-/* Enlarged Image */
 #enlargedImageContainer {
   display: flex;
   align-items: center;
@@ -288,7 +288,6 @@ h2 {
   display: none;
 }
 
-/* Photo Dropdown */
 .photoDropdown {
   color: rgb(58, 17, 2);
   font-family: "Josefin Slab", serif;
@@ -317,7 +316,6 @@ h2 {
   justify-content: center;
 }
 
-/* Image Sizes */
 #image7,
 #image5 {
   height: 350px;
@@ -382,7 +380,6 @@ h2 {
   height: 350px;
 }
 
-/* Footer */
 #footer {
   position: fixed;
   bottom: 0;
@@ -402,9 +399,7 @@ h2 {
   text-decoration: none;
 }
 
-/* Mobile adjustments for images */
 @media (max-width: 768px) {
-  /* Make images responsive on smaller screens */
   #image7,
   #image5,
   #image14,
@@ -434,18 +429,17 @@ h2 {
   }
 }
 
-/* For even smaller screens (phones in portrait mode) */
 @media (max-width: 480px) {
   h1 {
-    font-size: 42px; /* Smaller header font size */
+    font-size: 42px;
   }
 
   h2 {
-    font-size: 16px; /* Adjust the subheading font size */
+    font-size: 16px;
   }
 
   #header {
-    margin: 0 10px; /* Further reduce margins for tiny screens */
+    margin: 0 10px;
     padding-top: 10px;
   }
 
@@ -454,7 +448,7 @@ h2 {
   }
 
   #footer {
-    height: 50px; /* Adjust footer for smaller screens */
+    height: 50px;
   }
 
   #footer h4 {
@@ -462,6 +456,6 @@ h2 {
   }
 
   #footer a {
-    font-size: 14px; /* Smaller footer links */
+    font-size: 14px;
   }
 }

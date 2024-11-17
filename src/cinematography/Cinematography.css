@@ -94,17 +94,21 @@ p {
   width: 619px;
 }
 
-#image22, #image24 {
+#image22,
+#image24 {
   height: 442px;
   width: 619px;
 }
 
-#image21, #image16, #image15 {
+#image21,
+#image16,
+#image15 {
   width: 1300px;
   height: 455px;
 }
 
-#image17, #image19 {
+#image17,
+#image19 {
   width: 1300px;
   height: 445px;
 }
@@ -119,7 +123,8 @@ p {
   height: 442px;
 }
 
-#image11, #image14 {
+#image11,
+#image14 {
   width: 1300px;
   height: 543px;
 }
@@ -134,17 +139,24 @@ p {
   height: 451px;
 }
 
-#image13, #image12 {
+#image13,
+#image12 {
   width: 1300px;
   height: 541px;
 }
 
-#image8, #image1, #image5, #image2, #image4, #image3 {
+#image8,
+#image1,
+#image5,
+#image2,
+#image4,
+#image3 {
   width: 1300px;
   height: 731px;
 }
 
-#image6, #image7 {
+#image6,
+#image7 {
   width: 1300px;
   height: 735px;
 }
@@ -166,4 +178,127 @@ p {
 #footer a {
   color: rgb(58, 17, 2);
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  #header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #topImagesContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #topImagesContainer img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  #mainImageContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #image23,
+  #image22,
+  #image24,
+  #image21,
+  #image16,
+  #image15,
+  #image17,
+  #image19,
+  #image9,
+  #image20,
+  #image11,
+  #image14,
+  #image10,
+  #image18,
+  #image13,
+  #image12,
+  #image8,
+  #image1,
+  #image5,
+  #image2,
+  #image4,
+  #image3,
+  #image6,
+  #image7 {
+    width: 90%;
+    height: auto;
+  }
+
+  #footer {
+    height: 50px;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 15px;
+  }
+
+  #topImagesContainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  #image23,
+  #image22,
+  #image24,
+  #image21,
+  #image16,
+  #image15,
+  #image17,
+  #image19,
+  #image9,
+  #image20,
+  #image11,
+  #image14,
+  #image10,
+  #image18,
+  #image13,
+  #image12,
+  #image8,
+  #image1,
+  #image5,
+  #image2,
+  #image4,
+  #image3,
+  #image6,
+  #image7 {
+    width: 80%;
+    height: auto;
+  }
+
+  #footer {
+    height: 40px;
+  }
 }
