@@ -1,170 +1,180 @@
 body {
-    background-color: #e3d5ca;
-    margin: 0;
-    z-index: 9997;
-  }
+  background-color: #e3d5ca;
+  margin: 0;
+  z-index: 9997;
+}
 
-  #header {
-    margin-left: 740px;
-    margin-right: 740px;
-  }
-  
-  h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    color: rgb(58, 17, 2);
-    font-family: "Oooh Baby";
-    font-size: 86px;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  h1:hover {
-    transform: scale(1.1);
-  }
+#header {
+  margin-left: 740px;
+  margin-right: 740px;
+}
 
-  h2 {
-    color: rgb(58, 17, 2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Josefin Slab", serif;
-  }
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: rgb(58, 17, 2);
+  font-family: "Oooh Baby";
+  font-size: 86px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
 
-  #barsContainer {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-  }
+h1:hover {
+  transform: scale(1.1);
+}
 
-  #barsContainer svg {
-    width: 32px;
-    height: 32px;
-  }
+h2 {
+  color: rgb(58, 17, 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Josefin Slab", serif;
+}
 
-  #menu {
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: none;
-    z-index: 1000;
-  }
+#barsContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
 
-  #enlargedImageContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    display: none;
-  }
-  
-  #enlargedImage {
-    max-width: 63%;
-    max-height: 80%;
-    border: 1px solid black;
-  }
-  
-  #closeButton {
-    position: absolute;
-    top: 10px;
-    right: 120px;
-  }
+#barsContainer svg {
+  width: 32px;
+  height: 32px;
+}
 
-  #overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9998;
-    display: none;
-  }
+#menu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
 
-  .photoDropdown {
-    color: rgb(58, 17, 2);
-    font-family: "Josefin Slab", serif;
-    font-weight: bold;
-    font-size: 20px;
-  }
+#enlargedImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+}
 
-  #photoCategoryContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    overflow: autto;
-    white-space: nowrap;
-    padding-bottom: 50px;
-    padding-left: 10px;
-  }
+#enlargedImage {
+  max-width: 63%;
+  max-height: 80%;
+  border: 1px solid black;
+}
 
-  .scrollable-wrapper {
-    overflow-x: auto;
-    white-space: nowrap;
-    padding-bottom: 10px;
-  }
-  
-  .photoDropdown {
-    display: flex;
-    justify-content: center;
-    /* text-decoration: underline; */
-  }
+#closeButton {
+  position: absolute;
+  top: 10px;
+  right: 120px;
+}
 
-  #image7, #image5 {
-    height: 350px;
-    width: 528px;
-  }
-  
-  #image14 {
-    height: 350px;
-    width: 197px;
-  }
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: none;
+}
 
-  #image15, #image16, #image12, #image13 {
-    height: 350px;
-    width: 622px;
-  }
+.photoDropdown {
+  color: rgb(58, 17, 2);
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
 
-  #image17 {
-    height: 350px;
-    width: 490px;
-  }
+#photoCategoryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: autto;
+  white-space: nowrap;
+  padding-bottom: 50px;
+  padding-left: 10px;
+}
 
-  #image25, #image26 {
-    height: 350px;
-    width: 198px;
-  }
+.scrollable-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
 
-  #image27 {
-    height: 350px;
-    width: 467px;
-  }
+.photoDropdown {
+  display: flex;
+  justify-content: center;
+  /* text-decoration: underline; */
+}
 
-  #image30, #image9, #image10, #image20 {
-    height: 350px;
-    width: 525px;
-  }
+#image7,
+#image5 {
+  height: 350px;
+  width: 528px;
+}
 
-  #image31, #image34, #image21 {
-    height: 350px;
-    width: 251px;
-  }
+#image14 {
+  height: 350px;
+  width: 197px;
+}
 
-  #image32 {
-    height: 350px;
-    width: 240px;
-  }
+#image15,
+#image16,
+#image12,
+#image13 {
+  height: 350px;
+  width: 622px;
+}
+
+#image17 {
+  height: 350px;
+  width: 490px;
+}
+
+#image25,
+#image26 {
+  height: 350px;
+  width: 198px;
+}
+
+#image27 {
+  height: 350px;
+  width: 467px;
+}
+
+#image30,
+#image9,
+#image10,
+#image20 {
+  height: 350px;
+  width: 525px;
+}
+
+#image31,
+#image34,
+#image21 {
+  height: 350px;
+  width: 251px;
+}
+
+#image32 {
+  height: 350px;
+  width: 240px;
+}
 
 .photo {
   height: 350px;
@@ -175,28 +185,283 @@ body {
   height: 350px;
 }
 
+#header {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(229, 224, 222);
+}
+
+#footer h4 {
+  margin-top: 8px;
+}
+
+#footer a {
+  color: rgb(58, 17, 2);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 56px; /* Reduce font size on smaller screens */
+  }
+
   #header {
-    display: flex;
-    justify-content: center;
+    margin: 0 10px; /* Remove large margins */
+    padding-top: 15px;
+  }
+
+  h2 {
+    font-size: 18px; /* Smaller subheading */
+  }
+}
+
+/* Menu */
+#barsContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#barsContainer svg {
+  width: 32px;
+  height: 32px;
+}
+
+#menu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+/* Enlarged Image */
+#enlargedImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+}
+
+#enlargedImage {
+  max-width: 63%;
+  max-height: 80%;
+  border: 1px solid black;
+}
+
+#closeButton {
+  position: absolute;
+  top: 10px;
+  right: 120px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: none;
+}
+
+/* Photo Dropdown */
+.photoDropdown {
+  color: rgb(58, 17, 2);
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#photoCategoryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+  white-space: nowrap;
+  padding-bottom: 50px;
+  padding-left: 10px;
+}
+
+.scrollable-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+.photoDropdown {
+  display: flex;
+  justify-content: center;
+}
+
+/* Image Sizes */
+#image7,
+#image5 {
+  height: 350px;
+  width: 528px;
+}
+
+#image14 {
+  height: 350px;
+  width: 197px;
+}
+
+#image15,
+#image16,
+#image12,
+#image13 {
+  height: 350px;
+  width: 622px;
+}
+
+#image17 {
+  height: 350px;
+  width: 490px;
+}
+
+#image25,
+#image26 {
+  height: 350px;
+  width: 198px;
+}
+
+#image27 {
+  height: 350px;
+  width: 467px;
+}
+
+#image30,
+#image9,
+#image10,
+#image20 {
+  height: 350px;
+  width: 525px;
+}
+
+#image31,
+#image34,
+#image21 {
+  height: 350px;
+  width: 251px;
+}
+
+#image32 {
+  height: 350px;
+  width: 240px;
+}
+
+.photo {
+  height: 350px;
+  width: 232px;
+}
+
+.photographyPhotos {
+  height: 350px;
+}
+
+/* Footer */
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(229, 224, 222);
+}
+
+#footer h4 {
+  margin-top: 8px;
+}
+
+#footer a {
+  color: rgb(58, 17, 2);
+  text-decoration: none;
+}
+
+/* Mobile adjustments for images */
+@media (max-width: 768px) {
+  /* Make images responsive on smaller screens */
+  #image7,
+  #image5,
+  #image14,
+  #image15,
+  #image16,
+  #image12,
+  #image13,
+  #image17,
+  #image25,
+  #image26,
+  #image27,
+  #image30,
+  #image9,
+  #image10,
+  #image20,
+  #image31,
+  #image34,
+  #image21,
+  #image32 {
+    height: auto;
+    width: 100%;
+  }
+
+  .photo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For even smaller screens (phones in portrait mode) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 42px; /* Smaller header font size */
+  }
+
+  h2 {
+    font-size: 16px; /* Adjust the subheading font size */
+  }
+
+  #header {
+    margin: 0 10px; /* Further reduce margins for tiny screens */
     padding-top: 10px;
-    cursor: pointer;
+  }
+
+  .photoDropdown {
+    font-size: 16px;
   }
 
   #footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    padding: 5px;
-    background-color: rgb(229, 224, 222);
+    height: 50px; /* Adjust footer for smaller screens */
   }
-  
+
   #footer h4 {
-    margin-top: 8px;
+    margin-top: 15px;
   }
-  
+
   #footer a {
-    color: rgb(58, 17, 2);
-    text-decoration: none;
+    font-size: 14px; /* Smaller footer links */
   }
+}
