@@ -1,3 +1,4 @@
+/* Base styles (for desktop and larger screens) */
 body {
   background-color: #e3d5ca;
   margin: 0;
@@ -89,4 +90,69 @@ h2 {
   position: relative;
   margin-top: 20px;
   min-height: 240px;
+}
+
+/* Mobile Styles - Use media queries to target smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 56px; /* Adjust the size of the header on smaller screens */
+  }
+
+  h2 {
+    font-size: 18px; /* Adjust the font size for the subheading */
+  }
+
+  #header {
+    margin-left: 20px; /* Reduce margin for smaller screens */
+    margin-right: 20px;
+  }
+
+  #navbuttons {
+    gap: 50px; /* Reduce gap between buttons */
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .portfolioImage {
+    width: 320px; /* Make images smaller on mobile */
+    height: 180px;
+  }
+
+  .navButton {
+    width: 100%; /* Make nav buttons take up full width on mobile */
+    text-align: center; /* Center the text */
+  }
+
+  /* Optional: Adjust hover effect on mobile (usually hover isn't needed on touch screens) */
+  .navButton h3:hover + .portfolioImage {
+    display: block;
+  }
+}
+
+/* Smaller screens - for portrait mobile devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 42px; /* Smaller header font size */
+  }
+
+  h2 {
+    font-size: 16px; /* Adjust the subheading font size */
+  }
+
+  #header {
+    margin-left: 10px; /* Further reduce margins for tiny screens */
+    margin-right: 10px;
+  }
+
+  #navbuttons {
+    gap: 30px; /* Reduce gap between navigation buttons */
+  }
+
+  .portfolioImage {
+    width: 280px; /* Even smaller images */
+    height: 160px;
+  }
+
+  .navButton h3 {
+    font-size: 14px; /* Smaller font size for button text */
+  }
 }
