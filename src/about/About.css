@@ -160,3 +160,98 @@ h2 {
   height: 30px;
   width: 53px;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  #header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #maincontainer {
+    flex-direction: column;
+    align-items: cneter;
+  }
+
+  #container1 {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .aboutImage {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+  }
+
+  #photo1, #photo2, #photo3, #photo6, #photo7 {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+  }
+
+  #footer {
+    height: 50px;
+    padding: 10px 0;
+  }
+
+  #footer h4 {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  #footer a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 15px;
+  }
+
+  #maincontainer {
+    flex-direction: column;
+  }
+
+  #container1 {
+    gap: 5px;
+  }
+
+  .aboutImage {
+    max-width: 100%; /* Ensure images are fully responsive */
+    height: auto;
+  }
+
+  #footer {
+    height: 50px;
+  }
+
+  #footer h4 {
+    font-size: 12px;
+  }
+
+  #footer a {
+    font-size: 12px;
+  }
+
+  #InstagramImage {
+    width: 40px; /* Resize Instagram icon on mobile */
+  }
+}
