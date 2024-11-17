@@ -198,14 +198,16 @@ p {
   }
 
   #topImagesContainer {
+    display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
     width: 100%;
   }
 
   #topImagesContainer img {
-    width: 100%;
+    width: 32%;
     height: auto;
     margin-bottom: 10px;
   }
@@ -214,7 +216,6 @@ p {
     flex-direction: column;
     gap: 20px;
   }
-
   #image23,
   #image22,
   #image24,
@@ -252,11 +253,11 @@ p {
     padding: 5px;
     background-color: rgb(229, 224, 222);
   }
-  
+
   #footer h4 {
     margin-top: 8px;
   }
-  
+
   #footer a {
     color: rgb(58, 17, 2);
     text-decoration: none;
@@ -282,8 +283,16 @@ p {
     margin: 15px;
   }
 
+  #topImagesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
   #topImagesContainer img {
-    width: 100%;
+    width: 48%;
     height: auto;
   }
 
