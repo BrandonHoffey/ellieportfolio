@@ -200,6 +200,8 @@ p {
   #topImagesContainer {
     flex-direction: row;
     align-items: center;
+    gap: 10px;
+    width: 100%;
   }
 
   #topImagesContainer img {
