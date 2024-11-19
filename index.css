@@ -95,11 +95,11 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 56px;
+    font-size: 76px;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   #header {
@@ -108,7 +108,7 @@ h2 {
   }
 
   #navbuttons {
-    gap: 30px;
+    gap: 100px;
     font-size: 16px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -129,17 +129,17 @@ h2 {
   }
 
   #navbuttons h3 {
-    font-size: 18px;
+    font-size: 21px;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 42px;
+    font-size: 66px;
   }
 
   h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   #header {
@@ -148,7 +148,7 @@ h2 {
   }
 
   #navbuttons {
-    gap: 20px;
+    gap: 100px;
   }
 
   .portfolioImage {
@@ -156,7 +156,7 @@ h2 {
     height: 160px;
   }
 
-  .navButton h3 {
-    font-size: 14px;
+  #navbuttons h3 {
+    font-size: 21px;
   }
 }
