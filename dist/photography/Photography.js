@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const enlargedImageContainer = document.getElementById("enlargedImageContainer");
     const overlay = document.getElementById("overlay");
     closeButton === null || closeButton === void 0 ? void 0 : closeButton.addEventListener("click", function () {
+        console.log("Close button clicked");
         if (enlargedImageContainer && overlay) {
             enlargedImageContainer.style.display = "none";
             overlay.style.display = "none";
