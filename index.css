@@ -36,7 +36,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 110px;
+  gap: 130px;
   font-size: 18px;
   margin-bottom: 50px;
   color: rgb(58, 17, 2);
@@ -44,6 +44,11 @@ h2 {
 
 #navbuttons h3 {
   cursor: pointer;
+  transition: color;
+}
+
+#navbuttons h3:hover {
+  color: white;
 }
 
 .portfolioImage {
@@ -66,28 +71,6 @@ h2 {
 
 .navButton h3:hover + .portfolioImage {
   display: block;
-}
-
-#aboutButton:hover,
-#photographyButton:hover {
-  color: white;
-  font-size: 30px;
-}
-
-#contactButton:hover {
-  color: rgb(8, 8, 8);
-  font-size: 30px;
-}
-
-#contactButton:hover {
-  visibility: visible;
-  height: auto;
-}
-
-.ContactDiv {
-  position: relative;
-  margin-top: 20px;
-  min-height: 240px;
 }
 
 @media (max-width: 768px) {
@@ -131,6 +114,11 @@ h2 {
 
   #navbuttons h3 {
     font-size: 21px;
+    color: white;
+  }
+
+  #cinematographyButton h3 {
+    color: black !important;
   }
 }
 
@@ -148,17 +136,17 @@ h2 {
     margin-right: 10px;
   }
 
-  #navbuttons {
-    gap: 100px;
+  #navbuttons h3 {
+    color: white;
+  }
+
+  #cinematographyButton h3 {
+    color: black !important;
   }
 
   .portfolioImage {
     width: 280px;
     height: 160px;
     display: block;
-  }
-
-  #navbuttons h3 {
-    font-size: 21px;
   }
 }
