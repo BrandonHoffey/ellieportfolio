@@ -227,28 +227,49 @@ h2 {
   }
 
   #maincontainer {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   #container1 {
     gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #container2 img {
+    width: 169px;
+    height: 225px;
+  }
+
+  #container3 p {
+    color: rgb(58, 17, 2);
+    font-family: "Josefin Slab", serif;
+    font-size: 14px;
   }
 
   .aboutImage {
-    max-width: 100%; /* Ensure images are fully responsive */
+    max-width: 100%;
+    height: auto;
+  }
+
+  #photo1, #photo2, #photo3, #photo4, #photo5, #photo6, #photo7 {
+    width: 30%;
+    max-width: 90%;
     height: auto;
   }
 
   #footer {
-    height: 50px;
+    height: 28px;
+    padding: 0;
   }
 
   #footer h4 {
     font-size: 12px;
+    margin-top: 8px;
   }
 
   #footer a {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   #InstagramImage {
