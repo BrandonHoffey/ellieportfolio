@@ -124,12 +124,18 @@ h2 {
 }
 
 @media (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   h1 {
-    font-size: 66px;
+    font-size: 42px;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   #header {
@@ -138,10 +144,7 @@ h2 {
   }
 
   #navbuttons {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 25px;
-    gap: 85px;
+    margin-bottom: 15px;
   }
 
   #navbuttons h3 {
