@@ -59,6 +59,7 @@ h2 {
   font-family: "Josefin Slab", serif;
   margin-left: 40vw;
   margin-right: 40vw;
+  white-space: nowrap;
 }
 
 #maincontainer {
@@ -168,6 +169,7 @@ h2 {
 
   h2 {
     font-size: 18px;
+    white-space: nowrap;
   }
 
   #header {
@@ -219,11 +221,13 @@ h2 {
 
   h2 {
     font-size: 16px;
+    white-space: nowrap;
+    margin-bottom: 2px;
   }
 
   p {
-    font-size: 14px;
-    margin: 15px;
+    font-size: 18px;
+    margin-top: 2px;
   }
 
   #maincontainer {
@@ -234,6 +238,7 @@ h2 {
     gap: 5px;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 28px;
   }
 
   #container2 img {
@@ -264,15 +269,10 @@ h2 {
   }
 
   #footer h4 {
-    font-size: 12px;
-    margin-top: 8px;
-  }
-
-  #footer a {
-    font-size: 14px;
+    margin-top: 6px;
   }
 
   #InstagramImage {
-    width: 40px; /* Resize Instagram icon on mobile */
+    width: 40px;
   }
 }

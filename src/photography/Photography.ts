@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const headerButton = document.getElementById("header");
 
   if (headerButton) {
-    headerButton.addEventListener("click", function () {
+    headerButton.addEventListener("click", () => {
       window.location.href = "/index.html";
     });
   }
@@ -10,18 +10,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const barsContainer = document.getElementById("barsContainer");
   barsContainer?.addEventListener("click", toggleMenu);
 
-  const photos = document.querySelectorAll(".photographyPhotos img");
+  const photos = document.querySelectorAll<HTMLImageElement>(".photographyPhotos img");
 
   photos.forEach((photo) => {
-    photo.addEventListener("click", function (event) {
+    photo.addEventListener("click", (event: Event) => {
       const clickedImageSrc = (event.target as HTMLImageElement).src;
-      const enlargedImage = document.getElementById(
-        "enlargedImage"
-      ) as HTMLImageElement;
+      const enlargedImage = document.getElementById("enlargedImage") as HTMLImageElement;
       enlargedImage.src = clickedImageSrc;
-      const enlargedImageContainer = document.getElementById(
-        "enlargedImageContainer"
-      );
+
+      const enlargedImageContainer = document.getElementById("enlargedImageContainer");
       const overlay = document.getElementById("overlay");
       if (enlargedImageContainer && overlay) {
         enlargedImageContainer.style.display = "block";
@@ -31,15 +28,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const closeButton = document.getElementById("closeButton");
-  const enlargedImageContainer = document.getElementById(
-    "enlargedImageContainer"
-  );
+  const closeButton = document.getElementById("closeButton") as HTMLButtonElement;
+  const enlargedImageContainer = document.getElementById("enlargedImageContainer");
   const overlay = document.getElementById("overlay");
 
-  closeButton?.addEventListener("click", function () {
+  closeButton?.addEventListener("click", () => {
     console.log("Close button clicked");
     if (enlargedImageContainer && overlay) {
+      enlargedImageContainer.style.display = "none";
+      overlay.style.display = "none";
+      document.body.style.overflow = "";
+    }
+  });
+
+  overlay?.addEventListener("click", () => {
+    closeButton?.click();
+  });
+
+  document.addEventListener("keydown", (event: KeyboardEvent) => {
+    if (event.key === "Escape" && enlargedImageContainer && overlay) {
       enlargedImageContainer.style.display = "none";
       overlay.style.display = "none";
       document.body.style.overflow = "";
@@ -49,11 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function toggleMenu() {
     const menu = document.getElementById("menu");
     if (menu) {
-      if (menu.style.display === "block") {
-        menu.style.display = "none";
-      } else {
-        menu.style.display = "block";
-      }
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
     }
   }
 });

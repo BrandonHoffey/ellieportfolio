@@ -1,8 +1,8 @@
 "use strict";
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     const headerButton = document.getElementById("header");
     if (headerButton) {
-        headerButton.addEventListener("click", function () {
+        headerButton.addEventListener("click", () => {
             window.location.href = "/index.html";
         });
     }
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     barsContainer === null || barsContainer === void 0 ? void 0 : barsContainer.addEventListener("click", toggleMenu);
     const photos = document.querySelectorAll(".photographyPhotos img");
     photos.forEach((photo) => {
-        photo.addEventListener("click", function (event) {
+        photo.addEventListener("click", (event) => {
             const clickedImageSrc = event.target.src;
             const enlargedImage = document.getElementById("enlargedImage");
             enlargedImage.src = clickedImageSrc;
@@ -26,9 +26,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeButton = document.getElementById("closeButton");
     const enlargedImageContainer = document.getElementById("enlargedImageContainer");
     const overlay = document.getElementById("overlay");
-    closeButton === null || closeButton === void 0 ? void 0 : closeButton.addEventListener("click", function () {
+    closeButton === null || closeButton === void 0 ? void 0 : closeButton.addEventListener("click", () => {
         console.log("Close button clicked");
         if (enlargedImageContainer && overlay) {
+            enlargedImageContainer.style.display = "none";
+            overlay.style.display = "none";
+            document.body.style.overflow = "";
+        }
+    });
+    overlay === null || overlay === void 0 ? void 0 : overlay.addEventListener("click", () => {
+        closeButton === null || closeButton === void 0 ? void 0 : closeButton.click();
+    });
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && enlargedImageContainer && overlay) {
             enlargedImageContainer.style.display = "none";
             overlay.style.display = "none";
             document.body.style.overflow = "";
@@ -37,12 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function toggleMenu() {
         const menu = document.getElementById("menu");
         if (menu) {
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-            }
-            else {
-                menu.style.display = "block";
-            }
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
         }
     }
 });

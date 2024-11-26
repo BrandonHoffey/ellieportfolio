@@ -70,15 +70,21 @@ h2 {
 }
 
 #enlargedImage {
-  max-width: 63%;
-  max-height: 80%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   border: 1px solid black;
 }
 
 #closeButton {
   position: absolute;
   top: 10px;
-  right: 120px;
+  right: 10px;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10000;
 }
 
 #overlay {
@@ -475,64 +481,68 @@ h2 {
     padding-top: 10px;
   }
 
+  .photographyPhotos {
+    height: 210px;
+  }
+
   .photo {
-    height: 350px;
-    width: 232px;
+    height: 200px;
+    width: 133px;
   }
 
   #image7,
   #image5 {
-    height: 350px;
-    width: 528px;
+    height: 200px;
+    width: 302px;
   }
 
   #image14 {
-    height: 350px;
-    width: 197px;
+    height: 200px;
+    width: 113px;
   }
 
   #image15,
   #image16,
   #image12,
   #image13 {
-    height: 350px;
-    width: 622px;
+    height: 200px;
+    width: 355px;
   }
 
   #image17 {
-    height: 350px;
-    width: 490px;
+    height: 200px;
+    width: 280px;
   }
 
   #image25,
   #image26 {
-    height: 350px;
-    width: 198px;
+    height: 200px;
+    width: 113px;
   }
 
   #image27 {
-    height: 350px;
-    width: 467px;
+    height: 200px;
+    width: 267px;
   }
 
   #image30,
   #image9,
   #image10,
   #image20 {
-    height: 350px;
-    width: 525px;
+    height: 200px;
+    width: 300px;
   }
 
   #image31,
   #image34,
   #image21 {
-    height: 350px;
-    width: 251px;
+    height: 200px;
+    width: 143px;
   }
 
   #image32 {
-    height: 350px;
-    width: 240px;
+    height: 200px;
+    width: 137px;
   }
 
   .photoDropdown {

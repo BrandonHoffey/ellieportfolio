@@ -12,6 +12,7 @@ h1 {
   font-family: "Oooh Baby";
   font-size: 86px;
   transition: color 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
 }
 
 h1:hover {
@@ -87,6 +88,7 @@ p {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 50px;
 }
 
 #image23 {
