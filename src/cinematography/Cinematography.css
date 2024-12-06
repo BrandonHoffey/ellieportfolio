@@ -1,6 +1,19 @@
 body {
   background-color: #e3d5ca;
   margin: 0;
+  z-index: 9997;
+  overflow-x: hidden;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  cursor: pointer;
+  margin-left: 740px;
+  margin-right: 740px;
+  z-index: 1000;
+  position: relative;
 }
 
 h1 {
@@ -13,6 +26,7 @@ h1 {
   font-size: 86px;
   transition: color 0.3s ease, transform 0.3s ease;
   white-space: nowrap;
+  padding-top: 10px;
 }
 
 h1:hover {
@@ -32,6 +46,7 @@ h2 {
   top: 20px;
   right: 20px;
   cursor: pointer;
+  z-index: 1001;
 }
 
 #barsContainer svg {
@@ -41,27 +56,27 @@ h2 {
 
 #cinematographyMenu {
   position: fixed;
-  top: 0;
   left: 0;
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: none;
   z-index: 1000;
   width: 100%;
   padding: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 #cinematographyMenu ul {
   list-style-type: none;
-  padding: 0;
+  padding: 16px;
   margin: 0;
   display: flex;
-  gap: 50px;
+  justify-content: center;
+  gap: 80px;
 }
 
 #cinematographyMenu li {
@@ -73,7 +88,7 @@ h2 {
   color: rgb(58, 17, 2);
   font-family: "Josefin Slab", serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   transition: color 0.3s ease;
 }
 
@@ -81,13 +96,17 @@ h2 {
   color: #ff7f50;
 }
 
-#header {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  cursor: pointer;
-  margin-left: 740px;
-  margin-right: 740px;
+body.cinematographyMenu-active {
+  padding-top: 80px;
+}
+
+body.cinematographyMenu-active #barsContainer {
+  top: 20px;
+}
+
+body.cinematographyMenu-active #cinematographyMenu {
+  top: 0;
+  height: 60px;
 }
 
 #topImagesContainer {
@@ -294,7 +313,7 @@ p {
   #footer {
     height: 10px;
     padding: 5px 0;
-      }
+  }
 
   #footer h4 {
     margin-top: 0px;
@@ -367,8 +386,8 @@ p {
   }
 
   #footer {
-height: 5px;
-padding: 5px 0;
+    height: 5px;
+    padding: 5px 0;
   }
 
   #footer h4 {

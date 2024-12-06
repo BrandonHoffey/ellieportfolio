@@ -55,8 +55,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function toggleMenu() {
     const menu = document.getElementById("menu");
+    const body = document.body;
+    
     if (menu) {
-      menu.style.display = menu.style.display === "block" ? "none" : "block";
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+        body.classList.remove("menu-active");
+      } else {
+        menu.style.display = "block";
+        body.classList.add("menu-active");
+      }
     }
   }
 });

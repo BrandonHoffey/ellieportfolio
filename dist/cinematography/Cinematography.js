@@ -15,12 +15,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function toggleCinematographyMenu() {
     const cinematographyMenu = document.getElementById("cinematographyMenu");
+    const body = document.body;
     if (cinematographyMenu) {
         if (cinematographyMenu.style.display === "block") {
             cinematographyMenu.style.display = "none";
+            body.classList.remove("cinematographyMenu-active");
         }
         else {
             cinematographyMenu.style.display = "block";
+            body.classList.add("cinematographyMenu-active");
         }
     }
 }
