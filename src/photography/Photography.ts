@@ -10,53 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const barsContainer = document.getElementById("barsContainer");
   barsContainer?.addEventListener("click", toggleMenu);
 
-  const photos = document.querySelectorAll<HTMLImageElement>(".photographyPhotos img");
-
-  photos.forEach((photo) => {
-    photo.addEventListener("click", (event: Event) => {
-      const clickedImageSrc = (event.target as HTMLImageElement).src;
-      const enlargedImage = document.getElementById("enlargedImage") as HTMLImageElement;
-      enlargedImage.src = clickedImageSrc;
-
-      const enlargedImageContainer = document.getElementById("enlargedImageContainer");
-      const overlay = document.getElementById("overlay");
-      if (enlargedImageContainer && overlay) {
-        enlargedImageContainer.style.display = "block";
-        overlay.style.display = "block";
-        document.body.style.overflow = "hidden";
-      }
-    });
-  });
-
-  const closeButton = document.getElementById("closeButton") as HTMLButtonElement;
-  const enlargedImageContainer = document.getElementById("enlargedImageContainer");
-  const overlay = document.getElementById("overlay");
-
-  closeButton?.addEventListener("click", () => {
-    console.log("Close button clicked");
-    if (enlargedImageContainer && overlay) {
-      enlargedImageContainer.style.display = "none";
-      overlay.style.display = "none";
-      document.body.style.overflow = "";
-    }
-  });
-
-  overlay?.addEventListener("click", () => {
-    closeButton?.click();
-  });
-
-  document.addEventListener("keydown", (event: KeyboardEvent) => {
-    if (event.key === "Escape" && enlargedImageContainer && overlay) {
-      enlargedImageContainer.style.display = "none";
-      overlay.style.display = "none";
-      document.body.style.overflow = "";
-    }
-  });
-
-  function toggleMenu() {
+  function toggleMenu(): void {
     const menu = document.getElementById("menu");
     const body = document.body;
-    
+
     if (menu) {
       if (menu.style.display === "block") {
         menu.style.display = "none";

@@ -225,25 +225,29 @@ p {
   background-color: rgb(229, 224, 222);
 }
 
-#footer h4 {
-  margin-top: 8px;
+#contact {
+  display: flex;
+  align-items: center;
+  color: rgb(58, 17, 2);
+  font-size: 24px;
+  font-family: "Josefin Slab", serif;
 }
 
-#footer a {
-  color: rgb(58, 17, 2);
-  text-decoration: none;
+#emailLogo {
+  height: 32px;
+  width: 30px;
 }
 
 #InstagramButton {
   display: flex;
   justify-content: center;
-  width: 27px;
-  height: 30px;
+  width: 30px;
+  height: 33px;
 }
 
 #InstagramImage {
-  height: 30px;
-  width: 53px;
+  height: 34px;
+  width: 59px;
 }
 
 @media (max-width: 768px) {

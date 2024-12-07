@@ -31,6 +31,7 @@ h2 {
   margin: 0 auto;
 }
 
+
 #navbuttons {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -40,12 +41,22 @@ h2 {
   gap: 130px;
   font-size: 18px;
   margin-bottom: 50px;
-  color: rgb(58, 17, 2);
+  color: #e3d5ca;
 }
 
 #navbuttons h3 {
   cursor: pointer;
   transition: color;
+  color: #f1e6de;
+  text-shadow:
+    1px 1px 0px rgb(58, 17, 2), 
+    -1px -1px 0px rgb(58, 17, 2), 
+    1px -1px 0px rgb(58, 17, 2), 
+    -1px 1px 0px rgb(58, 17, 2), 
+    0px 1px 0px rgb(58, 17, 2), 
+    0px -1px 0px rgb(58, 17, 2), 
+    1px 0px 0px rgb(58, 17, 2), 
+    -1px 0px 0px rgb(58, 17, 2);
 }
 
 #navbuttons h3:hover {
@@ -57,9 +68,8 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
-  width: 420px;
-  height: 240px;
+  width: 350px;
+  height: 200px;
   border-radius: 10px;
   margin-top: 10px;
   z-index: -1;
@@ -87,25 +97,29 @@ h2 {
   background-color: rgb(229, 224, 222);
 }
 
-#footer h4 {
-  margin-top: 8px;
+#contact {
+  display: flex;
+  align-items: center;
+  color: rgb(58, 17, 2);
+  font-size: 24px;
+  font-family: "Josefin Slab", serif;
 }
 
-#footer a {
-  color: rgb(58, 17, 2);
-  text-decoration: none;
+#emailLogo {
+  height: 32px;
+  width: 30px;
 }
 
 #InstagramButton {
   display: flex;
   justify-content: center;
-  width: 27px;
-  height: 30px;
+  width: 30px;
+  height: 33px;
 }
 
 #InstagramImage {
-  height: 30px;
-  width: 53px;
+  height: 34px;
+  width: 59px;
 }
 
 @media (max-width: 768px) {
