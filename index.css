@@ -194,6 +194,7 @@ h2 {
 
   #navbuttons {
     margin-bottom: 15px;
+    gap: 70px;
   }
 
   #navbuttons h3 {

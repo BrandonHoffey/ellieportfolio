@@ -472,69 +472,12 @@ body.menu-active #menu {
   width: 53px;
 }
 
-@media (max-width: 768px) {
-  .photo {
-    height: 350px;
-    width: 232px;
-  }
-
-  #image7,
-  #image5 {
-    height: 350px;
-    width: 528px;
-  }
-
-  #image14 {
-    height: 350px;
-    width: 197px;
-  }
-
-  #image15,
-  #image16,
-  #image12,
-  #image13 {
-    height: 350px;
-    width: 622px;
-  }
-
-  #image17 {
-    height: 350px;
-    width: 490px;
-  }
-
-  #image25,
-  #image26 {
-    height: 350px;
-    width: 198px;
-  }
-
-  #image27 {
-    height: 350px;
-    width: 467px;
-  }
-
-  #image30,
-  #image9,
-  #image10,
-  #image20 {
-    height: 350px;
-    width: 525px;
-  }
-
-  #image31,
-  #image34,
-  #image21 {
-    height: 350px;
-    width: 251px;
-  }
-
-  #image32 {
-    height: 350px;
-    width: 240px;
-  }
-}
-
 @media (max-width: 480px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
   h1 {
     font-size: 42px;
   }
@@ -543,9 +486,46 @@ body.menu-active #menu {
     font-size: 16px;
   }
 
+  #menu {
+    overflow-x: hidden;
+    width: 99.5%;
+  }
+
   #header {
     margin: 0 10px;
     padding-top: 10px;
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+
+  #menu ul {
+    padding: 1px;
+    gap: 0px;
+  }
+
+  #menu li {
+    margin: 10px;
+  }
+
+  #barsContainer {
+    right: 10px;
+  }
+
+  body.menu-active {
+    overflow-x: hidden;
+  }
+  
+  body.menu-active #barsContainer {
+    top: 20px;
+    right: 10px;
+  }
+  
+  body.menu-active #menu {
+    top: 0;
+    height: 40px;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .photographyPhotos {
@@ -619,6 +599,7 @@ body.menu-active #menu {
   #footer {
     height: 28px;
     padding: 0;
+    overflow-x: hidden;
   }
 
   #footer h4 {

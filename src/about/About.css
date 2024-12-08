@@ -196,6 +196,7 @@ h2 {
   color: rgb(58, 17, 2);
   font-size: 24px;
   font-family: "Josefin Slab", serif;
+  padding-top: 24px;
 }
 
 #emailLogo {
@@ -272,6 +273,11 @@ h2 {
 }
 
 @media (max-width: 480px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
   h1 {
     font-size: 42px;
   }
@@ -280,6 +286,54 @@ h2 {
     font-size: 16px;
     white-space: nowrap;
     margin-bottom: 2px;
+  }
+
+  #aboutMenu {
+    overflow-x: hidden;
+    width: 99.5%;
+    margin: 0;
+    padding: 0;
+    padding-top: 6px;
+  }
+
+  #header {
+    margin: 0 10px;
+    padding-top: 10px;
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+
+  #aboutMenu ul {
+    padding: 1px;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #aboutMenu li {
+    margin: 0px;
+  }
+
+  #barsContainer {
+    right: 10px;
+  }
+
+  body.aboutMenu-active {
+    overflow-x: hidden;
+  }
+  
+  body.aboutMenu-active #barsContainer {
+    top: 20px;
+    right: 10px;
+  }
+  
+  body.aboutMenu-active #aboutMenu {
+    top: 0;
+    height: 75px;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   p {
@@ -329,13 +383,10 @@ h2 {
   #footer {
     height: 28px;
     padding: 0;
+    overflow-x: hidden;
   }
 
   #footer h4 {
-    margin-top: 6px;
-  }
-
-  #InstagramImage {
-    width: 40px;
+    font-size: 20px;
   }
 }
