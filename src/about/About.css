@@ -12,7 +12,7 @@ body {
   cursor: pointer;
   margin-left: 740px;
   margin-right: 740px;
-  z-index: 1000;
+  z-index: 9996;
   position: relative;
 }
 
@@ -26,6 +26,7 @@ h1 {
   font-size: 86px;
   transition: color 0.3s ease, transform 0.3s ease;
   padding-top: 10px;
+  z-index: 9996;
 }
 
 h1:hover {
@@ -46,7 +47,8 @@ h1:hover {
 }
 
 #aboutMenu {
-  position: fixed;
+  position: absolute;
+  top: 0;
   left: 0;
   background-color: white;
   border: 1px solid #ccc;
@@ -174,7 +176,7 @@ h2 {
 #container3 p {
   color: rgb(58, 17, 2);
   font-family: "Josefin Slab", serif;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 #footer {
@@ -196,7 +198,7 @@ h2 {
   color: rgb(58, 17, 2);
   font-size: 24px;
   font-family: "Josefin Slab", serif;
-  padding-top: 24px;
+  padding-top: 28px;
 }
 
 #emailLogo {
@@ -298,6 +300,7 @@ h2 {
 
   #header {
     margin: 0 10px;
+    margin-top: 12px;
     padding-top: 10px;
     margin-right: 80px;
     margin-left: 80px;
@@ -305,7 +308,7 @@ h2 {
 
   #aboutMenu ul {
     padding: 1px;
-    gap: 0px;
+    gap: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -330,7 +333,7 @@ h2 {
   
   body.aboutMenu-active #aboutMenu {
     top: 0;
-    height: 75px;
+    height: 90px;
     display: flex;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -360,7 +363,7 @@ h2 {
   #container3 p {
     color: rgb(58, 17, 2);
     font-family: "Josefin Slab", serif;
-    font-size: 14px;
+    font-size: 15.5px;
   }
 
   .aboutImage {
@@ -380,6 +383,10 @@ h2 {
     height: auto;
   }
 
+  #contact h4 {
+    font-size: 24px;
+  }
+
   #footer {
     height: 28px;
     padding: 0;
@@ -387,6 +394,10 @@ h2 {
   }
 
   #footer h4 {
-    font-size: 20px;
+    margin-top: 8px;
+  }
+
+  #footer a {
+    font-size: 14px;
   }
 }
