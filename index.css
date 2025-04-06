@@ -5,32 +5,28 @@ body {
   overflow: hidden;
 }
 
-h1 {
+#headerContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  color: rgb(58, 17, 2);
+  flex-direction: row;
+  justify-content: space-between;
+  height: 55px;
+  padding: 0 20px;
+  margin-top: 10px;
+  /* border: 1px solid black; */
+}
+
+#headerName {
   font-family: "Oooh Baby";
-  font-size: 86px;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-h2 {
   display: flex;
-  color: rgb(58, 17, 2);
   align-items: center;
-  justify-content: center;
-  font-family: "Josefin Slab", serif;
+  /* border: 1px solid black; */
 }
 
-#header {
+#headerBars {
   display: flex;
-  justify-content: center;
-  padding-top: 18px;
-  margin: 0 auto;
+  align-items: center;
+  /* border: 1px solid black; */
 }
-
 
 #navbuttons {
   padding-top: 50px;
