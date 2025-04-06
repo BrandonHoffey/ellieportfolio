@@ -1,7 +1,7 @@
 body {
   background-color: #e3d5ca;
   margin: 0;
-  height: 100%;
+  min-height: 100%;
 }
 
 #headerContainer {
@@ -27,6 +27,37 @@ body {
   display: flex;
   align-items: center;
   /* border: 1px solid black; */
+}
+
+.modal {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  right: 0;
+  bottom: 35px;
+  background-color: #e3d5ca;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal ul li {
+  font-family: "Josefin Slab", serif;
+  font-size: 24px;
+  color: rgb(58, 17, 2);
+  margin: 20px 0;
 }
 
 #mainImageContainer {

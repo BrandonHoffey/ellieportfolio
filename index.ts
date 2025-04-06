@@ -1,46 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const photographyButton = document.getElementById("photographyButton");
+// First, ensure that the 'menuToggle' element exists and that we can interact with it
+const menuToggle: HTMLElement | null = document.getElementById('headerBars');
+const modal: HTMLElement | null = document.getElementById('modal');
 
-  if (photographyButton) {
-    photographyButton.addEventListener("click", function () {
-      const photographyLink = document.createElement("a");
-      photographyLink.href = "./src/photography/Photography.html";
-
-      document.body.appendChild(photographyLink);
-
-      photographyLink.click();
-
-      document.body.removeChild(photographyLink);
-    });
-  }
-
-  const aboutButton = document.getElementById("aboutButton");
-
-  if (aboutButton) {
-    aboutButton.addEventListener("click", function () {
-      const aboutLink = document.createElement("a");
-      aboutLink.href = "./src/about/About.html";
-
-      document.body.appendChild(aboutLink);
-
-      aboutLink.click();
-
-      document.body.removeChild(aboutLink);
-    });
-  }
-
-  const cinematographyButton = document.getElementById("cinematographyButton");
-
-  if (cinematographyButton) {
-    cinematographyButton.addEventListener("click", function () {
-      const cinematographyLink = document.createElement("a");
-      cinematographyLink.href = "./src/cinematography/Cinematography.html";
-
-      document.body.appendChild(cinematographyLink);
-
-      cinematographyLink.click();
-
-      document.body.removeChild(cinematographyLink);
-    });
-  }
-});
+// Check if elements exist before adding event listeners
+if (menuToggle && modal) {
+  // Add a click event listener to the menu toggle icon
+  menuToggle.addEventListener('click', () => {
+    // Toggle the modal visibility by checking the current display style
+    if (modal.style.display === 'flex') {
+      modal.style.display = 'none'; // Hide the modal if it's currently visible
+    } else {
+      modal.style.display = 'flex'; // Show the modal if it's currently hidden
+    }
+  });
+}
