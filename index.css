@@ -2,7 +2,6 @@ body {
   background-color: #e3d5ca;
   margin: 0;
   height: 100%;
-  overflow: hidden;
 }
 
 #headerContainer {
@@ -46,6 +45,7 @@ body {
   color: rgb(58, 17, 2);
   font-family: "Josefin Slab", serif;
   font-size: 20px;
+  margin-bottom: 50px;
 }
 
 #footer {
