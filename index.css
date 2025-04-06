@@ -17,10 +17,12 @@ body {
 
 #headerName {
   font-family: "Oooh Baby";
+  font-size: 12px;
   display: flex;
   align-items: center;
   /* border: 1px solid black; */
 }
+
 
 #headerBars {
   display: flex;
@@ -28,56 +30,22 @@ body {
   /* border: 1px solid black; */
 }
 
-#navbuttons {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 130px;
-  font-size: 18px;
-  margin-bottom: 50px;
-  color: #e3d5ca;
+#mainImageContainer {
+  margin-top: 8px;
+  height: 400px;
+  /* border: 1px solid black; */
 }
 
-#navbuttons h3 {
-  cursor: pointer;
-  transition: color;
-  color: #f1e6de;
-  text-shadow:
-    1px 1px 0px rgb(58, 17, 2), 
-    -1px -1px 0px rgb(58, 17, 2), 
-    1px -1px 0px rgb(58, 17, 2), 
-    -1px 1px 0px rgb(58, 17, 2), 
-    0px 1px 0px rgb(58, 17, 2), 
-    0px -1px 0px rgb(58, 17, 2), 
-    1px 0px 0px rgb(58, 17, 2), 
-    -1px 0px 0px rgb(58, 17, 2);
+#mainImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-#navbuttons h3:hover {
-  color: white;
-}
-
-.portfolioImage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 350px;
-  height: 200px;
-  border-radius: 10px;
-  margin-top: 10px;
-  z-index: -1;
-}
-
-.navButton {
-  position: relative;
-  margin-top: 20px;
-}
-
-.navButton h3:hover + .portfolioImage {
-  display: block;
+#paragraphContainer p {
+  color: rgb(58, 17, 2);
+  font-family: "Josefin Slab", serif;
+  font-size: 20px;
 }
 
 #footer {
@@ -119,12 +87,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 76px;
-  }
 
   h2 {
     font-size: 22px;
@@ -134,38 +96,6 @@ body {
     margin-left: 20px;
     margin-right: 20px;
   }
-
-  #navbuttons {
-    gap: 100px;
-    font-size: 16px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .portfolioImage {
-    width: 320px;
-    height: 180px;
-    display: block;
-  }
-
-  .navButton {
-    width: 100%;
-    text-align: center;
-  }
-
-  .navButton h3:hover + .portfolioImage {
-    display: block;
-  }
-
-  #navbuttons h3 {
-    font-size: 21px;
-    color: white;
-  }
-
-  #cinematographyButton h3 {
-    color: black !important;
-  }
-
 }
 
 @media (max-width: 480px) {
@@ -173,10 +103,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  h1 {
-    font-size: 42px;
   }
 
   h2 {
@@ -188,22 +114,4 @@ body {
     margin-right: 10px;
   }
 
-  #navbuttons {
-    margin-bottom: 15px;
-    gap: 70px;
-  }
-
-  #navbuttons h3 {
-    color: white;
-  }
-
-  #navbuttons #cinematographyButton h3 {
-    color: black !important;
-  }
-
-  .portfolioImage {
-    width: 240px;
-    height: 140px;
-    display: block;
-  }
 }
