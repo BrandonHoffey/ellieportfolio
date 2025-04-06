@@ -59,6 +59,7 @@ body {
   text-align: center;
   padding: 5px;
   background-color: rgb(229, 224, 222);
+  margin-top: auto;
 }
 
 #contact {
@@ -103,6 +104,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: auto;
   }
 
   h2 {
