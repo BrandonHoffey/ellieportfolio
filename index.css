@@ -72,11 +72,33 @@ body {
   object-fit: cover;
 }
 
-#paragraphContainer p {
-  color: rgb(58, 17, 2);
-  font-family: "Josefin Slab", serif;
-  font-size: 20px;
-  margin-bottom: 50px;
+#paragraphMainContainer {
+  display: flex;
+  overflow: auto;
+}
+
+#leftContainer {
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+#leftContainer h3 {
+  margin-bottom: 400px;
+  font-size: 10px;
+}
+
+#rightContainer {
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border: 1px solid black;
+}
+
+#rightContainer p {
+  font-size: 12px;
 }
 
 #footer {
