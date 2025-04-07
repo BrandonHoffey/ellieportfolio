@@ -229,16 +229,20 @@ body {
 
   #topContainer {
     flex-direction: row;
-    height: auto;
+    height: 950px;
+    border: 1px solid black;
   }
 
   #textDiv {
     font-size: 16px;
     margin-left: 60px;
+    margin-right: 10px;
   }
 
   #bottomContainer {
     flex-direction: row;
+    margin-top: 10px;
+    border: 1px solid black;
   }
 
   #personalNotesDiv {
