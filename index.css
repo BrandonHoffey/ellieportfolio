@@ -223,14 +223,14 @@ body {
     flex-direction: column;
     padding-right: 10px;
     padding-left: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 
 
   #topContainer {
     flex-direction: row;
-    height: 950px;
-    border: 1px solid black;
+    height: 1250px;
+    /* border: 1px solid black; */
   }
 
   #textDiv {
@@ -242,7 +242,7 @@ body {
   #bottomContainer {
     flex-direction: row;
     margin-top: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 
   #personalNotesDiv {
