@@ -258,4 +258,94 @@ body {
     text-align: center;
     font-size: 18px;
   }
+
+  @media (max-width: 365px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: auto;
+      margin: 0;
+    }
+  
+
+    #paragraphMainContainer {
+      display: flex;
+      flex-direction: column;
+      padding-right: 10px;
+      padding-left: 10px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+  
+
+    #topContainer {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      height: auto;
+      overflow: hidden;
+    }
+  
+
+    #textDiv {
+      font-size: 16px;
+      height: 1200px;
+      margin-left: 40px;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    #aboutDiv {
+      left: 0;
+      margin-top: 20px;
+    }
+  
+    #bottomContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    #bottomContainer ul {
+      font-size: 18px;
+      margin-left: 40px;
+      margin-right: 0; 
+      padding-left: 0;
+    }
+  
+    #thanksH4 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  
+    #footer {
+      font-size: 16px;
+      height: 30px;
+    }
+  
+    #InstagramImage {
+      height: 30px;
+      width: 50px;
+    }
+  
+    #emailLogo {
+      height: 30px;
+      width: 28px;
+    }
+  
+    #mainImage {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+    }
+  
+    #mainImageContainer {
+      height: 250px;
+    }
 }
