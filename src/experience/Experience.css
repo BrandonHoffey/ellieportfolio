@@ -161,6 +161,20 @@ body.menu-active #menu {
   width: 59px;
 }
 
+@media (min-width: 1515px) {
+  #header {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media (max-width: 1514px) and (min-width: 769px) {
+  #header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     display: flex;
