@@ -11,6 +11,8 @@ body {
   height: 55px;
   padding: 0 20px;
   margin-top: 10px;
+  position: relative;
+  z-index: 1001;
   /* border: 1px solid black; */
 }
 
@@ -19,7 +21,13 @@ body {
   font-size: 14px;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
   /* border: 1px solid black; */
+}
+
+#headerName:hover {
+  color: #8b4513;
 }
 
 #headerBars {
@@ -30,7 +38,7 @@ body {
 
 .modal {
   position: fixed;
-  top: 55px;
+  top: 65px;
   left: 0;
   right: 0;
   bottom: 35px;
@@ -57,6 +65,12 @@ body {
   font-size: 24px;
   color: rgb(58, 17, 2);
   margin: 20px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal ul li:hover {
+  color: #8b4513;
 }
 
 #mainImageContainer {

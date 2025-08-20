@@ -6,14 +6,79 @@ body {
 }
 
 #header {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  cursor: pointer;
   margin-left: 740px;
   margin-right: 740px;
-  z-index: 1000;
+  z-index: 9996;
   position: relative;
+  cursor: pointer;
+}
+
+#barsContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#barsContainer svg {
+  width: 40px;
+  height: 40px;
+}
+
+#menu {
+  position: fixed;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 16px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+#menu li {
+  margin: 0 20px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: rgb(58, 17, 2);
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+#menu a:hover {
+  color: #ff7f50;
+}
+
+body.menu-active {
+  padding-top: 80px;
+}
+
+body.menu-active #barsContainer {
+  top: 20px;
+}
+
+body.menu-active #menu {
+  top: 0;
+  height: 60px;
 }
 
 h1 {
@@ -39,74 +104,6 @@ h2 {
   align-items: center;
   justify-content: center;
   font-family: "Josefin Slab", serif;
-}
-
-#barsContainer {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  z-index: 1001;
-}
-
-#barsContainer svg {
-  width: 40px;
-  height: 40px;
-}
-
-#cinematographyMenu {
-  position: absolute;
-  left: 0;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-#cinematographyMenu ul {
-  list-style-type: none;
-  padding: 16px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-}
-
-#cinematographyMenu li {
-  margin: 0 20px;
-}
-
-#cinematographyMenu a {
-  text-decoration: none;
-  color: rgb(58, 17, 2);
-  font-family: "Josefin Slab", serif;
-  font-weight: bold;
-  font-size: 20px;
-  transition: color 0.3s ease;
-}
-
-#cinematographyMenu a:hover {
-  color: #ff7f50;
-}
-
-body.cinematographyMenu-active {
-  padding-top: 80px;
-}
-
-body.cinematographyMenu-active #barsContainer {
-  top: 20px;
-}
-
-body.cinematographyMenu-active #cinematographyMenu {
-  top: 0;
-  height: 60px;
 }
 
 #topImagesContainer {
@@ -259,13 +256,13 @@ p {
     font-size: 56px;
   }
 
-  h2 {
-    font-size: 18px;
+  #header {
+    margin: 0 10px;
+    padding-top: 15px;
   }
 
-  #header {
-    margin-left: 20px;
-    margin-right: 20px;
+  h2 {
+    font-size: 18px;
   }
 
   #topImagesContainer {
@@ -336,7 +333,6 @@ p {
 }
 
 @media (max-width: 480px) {
-
   body {
     overflow-x: hidden;
   }
@@ -347,53 +343,6 @@ p {
 
   h2 {
     font-size: 16px;
-  }
-
-  #cinematographyMenu {
-    overflow-x: hidden;
-    width: 99.5%;
-  }
-
-  #header {
-    margin: 0 10px;
-    margin-top: 12px;
-    padding-top: 10px;
-    margin-right: 80px;
-    margin-left: 80px;
-  }
-
-  #cinematographyMenu ul {
-    padding: 1px;
-    gap: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #cinematographyMenu li {
-    margin: 0px;
-  }
-
-  #barsContainer {
-    top: 14px;
-    right: 10px;
-  }
-
-  body.cinematographyMenu-active {
-    overflow-x: hidden;
-  }
-  
-  body.cinematographyMenu-active #barsContainer {
-    top: 14px;
-    right: 10px;
-  }
-  
-  body.cinematographyMenu-active #cinematographyMenu {
-    top: 0;
-    height: 78px;
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
   }
 
   p {
@@ -454,5 +403,65 @@ p {
 
   #footer a {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  #menu {
+    overflow-x: hidden;
+    width: 99.5%;
+  }
+
+  #header {
+    margin: 0 10px;
+    margin-top: 12px;
+    padding-top: 10px;
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+
+  #menu ul {
+    padding: 1px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menu li {
+    margin: 0px;
+  }
+
+  #barsContainer {
+    right: 10px;
+  }
+
+  body.menu-active {
+    overflow-x: hidden;
+  }
+
+  body.menu-active #barsContainer {
+    top: 20px;
+    right: 10px;
+  }
+
+  body.menu-active #menu {
+    top: 0;
+    height: 78px;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
