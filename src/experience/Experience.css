@@ -122,6 +122,272 @@ body.menu-active #menu {
   color: rgb(58, 17, 2);
 }
 
+/* New section styles */
+.section {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.section h3 {
+  color: rgb(58, 17, 2);
+  font-family: "Josefin Slab", serif;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid rgb(58, 17, 2);
+  padding-bottom: 10px;
+}
+
+/* Film Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  border: none;
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.4s ease;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(58, 17, 2, 0.1);
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, rgb(58, 17, 2), #8b4513, #a0522d);
+  opacity: 0.8;
+}
+
+.project-card:nth-child(odd) {
+  transform: translateY(10px);
+}
+
+.project-card:nth-child(even) {
+  transform: translateY(-5px);
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(58, 17, 2, 0.2);
+}
+
+.project-card h4 {
+  color: rgb(58, 17, 2);
+  font-family: "Josefin Slab", serif;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  text-align: left;
+  border-bottom: 2px solid rgba(58, 17, 2, 0.2);
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.project-card h4::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 30%;
+  height: 2px;
+  background: rgb(58, 17, 2);
+}
+
+.project-card p {
+  margin: 8px 0;
+  font-family: "Josefin Slab", serif;
+  font-size: 16px;
+  color: rgb(58, 17, 2);
+  line-height: 1.4;
+}
+
+.project-card .role {
+  font-weight: bold;
+  color: #8b4513;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.project-card .company {
+  font-style: italic;
+  color: #a0522d;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.project-card .type {
+  color: #8b7355;
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.project-card .dates {
+  font-size: 13px;
+  color: #8b7355;
+  font-style: italic;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(58, 17, 2, 0.1);
+}
+
+/* Special styling for different project types */
+.project-card[data-role="Director of Photography"] {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 248, 240, 0.8) 100%
+  );
+}
+
+.project-card[data-role="First Assistant Camera"] {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(248, 255, 248, 0.7) 100%
+  );
+}
+
+.project-card[data-role="Second Assistant Camera"] {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(240, 248, 255, 0.7) 100%
+  );
+}
+
+.project-card[data-role="Camera Operator"] {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 240, 248, 0.7) 100%
+  );
+}
+
+.project-card[data-role="Key Grip"] {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(248, 248, 255, 0.7) 100%
+  );
+}
+
+.project-card[data-role="Script Supervisor"] {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 248, 248, 0.7) 100%
+  );
+}
+
+/* Technical Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.skill-category {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgb(58, 17, 2);
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(58, 17, 2, 0.15);
+}
+
+.skill-category h4 {
+  color: rgb(58, 17, 2);
+  font-family: "Josefin Slab", serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  border-bottom: 1px solid rgb(58, 17, 2);
+  padding-bottom: 8px;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-category li {
+  color: rgb(58, 17, 2);
+  font-family: "Josefin Slab", serif;
+  font-size: 16px;
+  margin: 8px 0;
+  padding: 5px 0;
+}
+
+/* Kit Grid */
+.kit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.kit-category {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgb(58, 17, 2);
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kit-category:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(58, 17, 2, 0.15);
+}
+
+.kit-category h4 {
+  color: rgb(58, 17, 2);
+  font-family: "Josefin Slab", serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  border-bottom: 1px solid rgb(58, 17, 2);
+  padding-bottom: 8px;
+}
+
+.kit-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kit-category li {
+  color: rgb(58, 17, 2);
+  font-family: "Josefin Slab", serif;
+  font-size: 16px;
+  margin: 8px 0;
+  padding: 5px 0;
+}
+
 #footer {
   display: flex;
   position: fixed;
@@ -204,6 +470,63 @@ body.menu-active #menu {
     font-size: 16px;
   }
 
+  /* Mobile styles for new sections */
+  .section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card h4 {
+    font-size: 20px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skill-category {
+    padding: 20px;
+  }
+
+  .skill-category h4 {
+    font-size: 20px;
+  }
+
+  .skill-category li {
+    font-size: 14px;
+  }
+
+  .kit-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .kit-category {
+    padding: 20px;
+  }
+
+  .kit-category h4 {
+    font-size: 20px;
+  }
+
+  .kit-category li {
+    font-size: 14px;
+  }
+
   #footer {
     height: 10px;
     padding: 5px 0;
@@ -276,6 +599,60 @@ body.menu-active #menu {
     display: flex;
     overflow-x: hidden;
     overflow-y: hidden;
+  }
+
+  /* Mobile styles for new sections */
+  .section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .projects-grid {
+    gap: 12px;
+  }
+
+  .project-card {
+    padding: 12px;
+  }
+
+  .project-card h4 {
+    font-size: 18px;
+  }
+
+  .project-card p {
+    font-size: 13px;
+  }
+
+  .skills-grid {
+    gap: 15px;
+  }
+
+  .skill-category {
+    padding: 15px;
+  }
+
+  .skill-category h4 {
+    font-size: 18px;
+  }
+
+  .skill-category li {
+    font-size: 13px;
+  }
+
+  .kit-grid {
+    gap: 15px;
+  }
+
+  .kit-category {
+    padding: 15px;
+  }
+
+  .kit-category h4 {
+    font-size: 18px;
+  }
+
+  .kit-category li {
+    font-size: 13px;
   }
 
   #footer {
