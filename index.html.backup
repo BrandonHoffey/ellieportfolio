@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Beth+Ellen&family=Cedarville+Cursive&family=Homemade+Apple&family=Josefin+Slab:wght@200&family=Julius+Sans+One&family=Oooh+Baby&family=Oswald:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="dist/index.js" defer></script>
+    <title>EllieMainPage</title>
+  </head>
+  <body>
+    <div id="headerContainer">
+      <div id="headerName">
+        <h1>ellie hoffey</h1>
+      </div>
+      <div id="headerBars">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <ul>
+          <li id="cinematographyLink">cinematography</li>
+          <li id="experienceLink">experience</li>
+          <li id="visualsLink">visuals</li>
+        </ul>
+      </div>
+    </div>
+    <div id="mainImageContainer">
+      <img
+        id="mainImage"
+        src="./images/About/IMG_4948.JPG"
+        alt="ellieportrait"
+      />
+    </div>
+    <div id="paragraphMainContainer">
+      <div id="topContainer">
+        <div id="aboutDiv">
+          <em>About</em>
+        </div>
+        <div id="textDiv">
+          <h3>
+            Hi, I’m Ellie Hoffey—a cinematographer, photographer, and camera
+            assistant based in Denver, Colorado. I started out in high school
+            doing portrait photography, drawn to capturing my friends in special
+            moments.
+          </h3>
+          <h3>
+            I actually began college as an anthropology major, but during COVID
+            I realized what I really wanted was to be behind the camera
+            full-time—observing life and telling stories. Now I’m studying Film
+            Production at the University of Colorado Denver, focusing on camera
+            work.
+          </h3>
+          <h3>
+            Over the past few years, I’ve worked on all kinds of
+            projects—documentaries, narrative films, weddings, concerts—and I’ve
+            found that I love the technical side of filmmaking the most. I
+            especially enjoy working as an assistant or in support roles. I’m
+            calm under pressure, good at problem-solving, and always looking for
+            ways to make things run more smoothly.
+          </h3>
+          <div id="italicizedText">
+            <em>
+              Whether I’m pulling focus, troubleshooting gear, or helping set up
+              a shot, I’m happiest when I’m behind the camera.
+            </em>
+          </div>
+        </div>
+      </div>
+      <div id="bottomContainer">
+        <div id="personalNotesDiv">
+          <em>Personal Notes</em>
+        </div>
+        <ul>
+          <li>I love using my film camera for day-to-day photography.</li>
+          <li>I actually enjoy paperwork and organizing gear.</li>
+          <li>I geek out over camera builds.</li>
+          <li>I live in Denver but I’m down to travel.</li>
+          <li>One filmmaker who inspires me is Lynne Ramsay.</li>
+        </ul>
+      </div>
+      <div id="thanksH4">
+        <h4>
+          Thanks for checking out my work — I hope something here speaks to you!
+        </h4>
+      </div>
+    </div>
+    <div id="footer">
+      <div id="contact">
+        <h4>Contact:</h4>
+      </div>
+      <a
+        href="https://www.instagram.com/elliekhoffey/"
+        target="_blank"
+        id="InstagramButton"
+      >
+        <img
+          id="InstagramImage"
+          src="./images/About/Instagram-Logo-PNG.png"
+          alt="Instagram Logo"
+        />
+      </a>
+      <a href="mailto:elliehoffey@gmail.com">
+        <img
+          id="emailLogo"
+          src="./images/About/3244562_chat_email_envelope_internet_letter_icon.png"
+          alt="email logo"
+        />
+      </a>
+    </div>
+  </body>
+</html>
